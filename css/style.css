@@ -1,5 +1,4 @@
 body {
-  min-width: 1250px;
   font-family: "OpenSans";
   font-size: 16px;
   margin: 0; }
@@ -7,6 +6,12 @@ body {
 @font-face {
   font-family: "OpenSans";
   src: url(../fonts/OpenSans-Light.ttf); }
+
+.toppp {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden; }
 
 header {
   width: 100%;
@@ -20,7 +25,7 @@ header {
   background-color: white; }
 
 .centerrheader {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0px 15px 0px 15px;
   height: 100px;
   margin: 0 auto; }
@@ -45,11 +50,19 @@ header {
   justify-content: space-between; }
 
 .menuheaderlink {
-  padding-top: 30px; }
+  padding-top: 30px;
+  border: green; }
 
 .headerlink {
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  padding: 10px; }
+
+.headerlink:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: #eeeeee;
+  color: #4988bd; }
 
 .menuheaderlinkbutton {
   margin-top: 20px;
@@ -66,20 +79,23 @@ header {
   color: white; }
 
 .regblockfon {
+  height: max-content;
+  width: 100%;
   background-color: #f7f7f7; }
 
 .centerrcontent {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0px 15px 0px 15px;
   margin: 0 auto;
-  padding-top: 105px; }
+  padding-top: 105px;
+  height: max-content; }
 
 .kursblockfon {
   background-color: white;
   height: 564px; }
 
 .centerrkurs {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0px 15px 0px 15px;
   margin: 0 auto;
   text-align: center; }
@@ -91,16 +107,7 @@ header {
   letter-spacing: 1px; }
 
 .typekurs {
-  padding-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-.type1 {
-  width: 350px; }
-
-.type2 {
-  width: 330px; }
+  padding-top: 40px; }
 
 .imagekurs {
   display: block;
@@ -122,7 +129,7 @@ header {
 
 .statisticblockcontent {
   display: flex;
-  width: 1220px;
+  max-width: 1220px;
   padding: 0 15px;
   flex-direction: row;
   justify-content: space-around;
@@ -133,17 +140,13 @@ header {
 .statistic {
   padding-top: 80px; }
 
-.sliderblockfon {
-  background-color: white;
-  height: 527px; }
-
 .videoblockfon {
   background-color: #f7f7f7;
   height: 867px; }
 
 .videocenterr {
   display: flex;
-  width: 1220px;
+  max-width: 1220px;
   padding: 0 15px;
   flex-direction: column;
   text-align: center;
@@ -159,13 +162,14 @@ header {
   padding-bottom: 35px; }
 
 .video {
+  width: 1020px;
+  height: 522px;
   margin: 0 auto; }
 
 .scenterr {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0 15px;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 0 auto; }
 
 .szag {
   padding-top: 76px;
@@ -185,7 +189,7 @@ header {
   height: 27px; }
 
 .vidguktext {
-  width: 881px;
+  max-width: 880px;
   text-align: center;
   letter-spacing: 1px;
   margin: 0; }
@@ -196,7 +200,12 @@ header {
   padding-top: 132px; }
 
 .slider_block {
-  height: 400px; }
+  overflow: hidden;
+  height: max-content;
+  min-width: 0; }
+
+.flex__column {
+  min-width: 0; }
 
 .author {
   text-align: center;
@@ -208,14 +217,10 @@ header {
   flex-direction: column;
   justify-content: space-around; }
 
-.slick-list {
-  margin: 0 auto;
-  overflow: hidden; }
-
 .slick-track {
   display: flex;
-  align-items: center;
-  outline: none; }
+  outline: none;
+  overflow: hidden; }
 
 .slider_block .slick-dots {
   display: flex;
@@ -238,20 +243,35 @@ header {
   border-radius: 50%;
   border: none; }
 
+.slick-track {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.typekurs {
+  overflow: hidden; }
+
+.type1 {
+  width: 320px;
+  height: 400px;
+  padding: 0 10px; }
+
 .mentorblockfon {
-  background-color: white;
-  height: 614px; }
+  height: min-content;
+  padding-bottom: 10px; }
 
 .mentorscenterr {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0 15px;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 0 auto; }
 
 .mentorszag {
   padding-top: 76px;
   padding-bottom: 11px;
   text-align: center; }
+
+.slider_mentors {
+  overflow: hidden; }
 
 .slider_mentors_item {
   height: 400px;
@@ -265,12 +285,7 @@ header {
 
 .slick-list {
   margin: 0 auto;
-  overflow: hidden; }
-
-.slick-track {
-  display: flex;
-  align-items: center;
-  outline: none; }
+  height: min-content; }
 
 .slider_mentors .slick-dots {
   display: flex;
@@ -303,11 +318,11 @@ header {
 
 .contacthelpfon {
   background-color: #3498db;
-  height: 196px; }
+  height: min-content; }
 
 .contacthelcontent {
   display: flex;
-  width: 1220px;
+  max-width: 1220px;
   padding: 0 15px;
   flex-direction: row;
   justify-content: space-around;
@@ -327,7 +342,7 @@ header {
   height: 196px; }
 
 .finalblockcenter {
-  width: 1220px;
+  max-width: 320px;
   padding: 0 15px;
   padding-top: 54px;
   text-align: center;
@@ -340,42 +355,37 @@ header {
 .regblock {
   height: 658px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-around; }
 
 .regblockleft {
-  padding-top: 220px;
-  padding-left: 35px;
-  padding-right: 35px;
-  width: 540px;
+  padding-top: 120px;
+  max-width: 540px;
   height: 438px;
   text-align: center;
-  float: left; }
-
-.regblockleftcontent {
-  margin: 0 auto;
-  width: 536px;
-  height: 344px; }
+  float: left;
+  margin: 0 auto; }
 
 .kursubleft {
   font-size: 25px;
   line-height: 25px; }
 
 .kursubinfo {
-  width: 499px;
+  max-width: 499px;
   height: 273px;
   letter-spacing: 0.9px; }
 
 .regblockright {
+  padding: 0 10px;
   padding-top: 45px;
-  padding-left: 20px;
-  width: 590px;
+  max-width: 590px;
   height: 613px;
   text-align: left;
   float: right; }
 
 .form {
   display: inline-block;
-  width: 590px; }
+  max-width: 590px; }
 
 #name {
   height: 53px; }
@@ -412,12 +422,15 @@ header {
   padding: 10px;
   box-sizing: border-box; }
 
+.form input:focus {
+  border-color: #3498db; }
+
 .formbuttton {
   padding: 0 111px; }
 
 .form button {
-  width: 368px;
-  height: 50px;
+  max-width: 368px;
+  max-height: 50px;
   border: 0;
   background-color: #337ab7;
   border-radius: 25px;

@@ -1,0 +1,123 @@
+@media ( max-width: 1020px) {
+    .video{
+        width: 100%;
+    }
+}
+@media (max-width: 800px){
+    .regblockfon{
+        height: max-content;
+    }
+    .regblock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .regblockright{
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 600px){
+    .centerrcontent{
+        min-width: 290px;
+        padding: 0px 15px 0px 15px;
+        margin: 0;
+        padding-top: 105px;
+    }
+    .regblock, .regblockleft,.regblockleftcontent{
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-bottom: 50px;
+        min-width: 290px;
+    }
+    .statisticblockfon{
+        background-color: #3498db;
+        height: min-content;
+    }
+    .statisticblockcontent{
+        display: grid;
+        min-width: 290px;
+        max-width: 570px;
+        text-align: center;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    .statistic{
+        padding: 0;
+    }
+    .videoblockfon{
+        background-color: #f7f7f7;
+        padding-bottom: 20px;
+        height: min-content;
+    }
+    .videocenterr{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .videozag{
+        padding-top: 76px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        padding-bottom: 36px;
+    }
+    .videotext{
+        padding-bottom: 35px;
+    }
+    .video{
+        height: 200px;
+        margin: 0 auto;
+    }
+    .contacthelcontent{
+        display: grid;
+        max-width: 290px;
+        text-align: center;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .kursblockfon{
+        height: min-content;
+    }
+    .kurszag{
+        font-size: 18px;
+    }
+    .centerrkurs {
+        height: min-content;
+        margin-bottom: 10px;
+    }
+    .typekurs{
+        height: min-content;
+        padding-bottom: 10px;
+    }
+
+    .form{
+        max-width: 500px;
+        padding: 0px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 450px){
+    .form__field,.form,.regblockright{
+        width: 290px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .formbuttton{
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .form button {
+        width: 100%;
+        height: 50px;
+    }
+
+}
+
+
