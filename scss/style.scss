@@ -25,10 +25,12 @@ header{
     background-color: white;
 }
 .centerrheader{
-    max-width: 1220px;
-    padding: 0px 15px 0px 15px;
+    width: 1220px;
+    padding: 0px 15px;
     height: 100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 .logoheader{
     float: left;
@@ -40,18 +42,17 @@ header{
     color: red;
 }
 .menuheader{
-    width: 693px;
+    max-width: 693px;
     height: 80px;
-    margin: 10px 0px;
+    margin-top: 10px;
     float: right;
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .menuheaderlink{
-    padding-top: 30px;
-    border: green;
+    padding-top: 15px;
 }
 .headerlink{
     text-decoration: none;
@@ -64,8 +65,15 @@ header{
     background-color: #eeeeee;
     color: #4988bd;
 }
+.header_list{
+    display: flex;
+    flex-direction: row;
+}
+.header_list li{
+    list-style: none;
+}
 .menuheaderlinkbutton{
-    margin-top: 20px;
+    margin-top: 7px;
     padding-top: 10px;
     padding-bottom: 20px;
     width: 139px;
@@ -185,7 +193,8 @@ header{
 }
 .scenterr{
     max-width: 1220px;
-    padding: 0 15px;  
+    padding: 0 15px;
+    padding-bottom: 10px;  
     margin: 0 auto;
 }
 .szag{
@@ -197,13 +206,13 @@ header{
 .vidguk{
     display: flex;
     justify-content: space-between;
-    width: 976px;
-    height: 159px;
+    max-width: 976px;
+    height: min-content;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 .lapkuleft{
     width: 30px;
-    height: 27px;
 }
 .vidguktext{
     max-width: 880px;
@@ -213,8 +222,14 @@ header{
 }
 .lapkuright{
     width: 30px;
-    height: 27px;
-    padding-top: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lapkurightttt{
+    width: 100%;
+    height: 20px;
+    color: white;
 }
 .slider_block{
     overflow: hidden;
@@ -226,11 +241,11 @@ header{
 }
 .author{
     text-align: center;
-    margin-top: -100px;
+    margin-bottom: 20px;
 }
 
 .slider_b_item{
-    height: 314px;
+    height: min-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -280,7 +295,7 @@ header{
 }
 .type1{
     width: 320px;
-    height: 400px;
+    height: min-content;
     padding: 0 10px;
 }
 
@@ -300,6 +315,10 @@ header{
     height: min-content;
     padding-bottom: 10px;
 }
+.media_mentor{
+    max-width: 337px;
+    max-height: 356px;
+}
 .mentorscenterr{
     max-width: 1220px;
     padding: 0 15px;  
@@ -314,20 +333,25 @@ header{
     overflow: hidden;
 }
 .slider_mentors_item{
-    height: 400px;
+    height: min-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .mentorsblockright{
-    width: 670px; 
-    height: 370px;
+    max-width: 670px; 
+    height: min-content;
+    padding: 0 10px;
 }
 .slick-list {
     margin: 0 auto;
     height: min-content;
 }
-
+.slick-dots {
+    li.slick-active button {
+        background-color: #666666;
+    }
+}
 .slider_mentors .slick-dots {
     display: flex;
     align-items: center;
@@ -343,6 +367,27 @@ header{
 
 }
 .slider_mentors .slick-dots button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: lightgray;
+    border-radius: 50%;
+    border: none;
+}
+.slider_kurs .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+}
+.slider_kurs .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+    outline: none;
+
+}
+.slider_kurs .slick-dots button{
     font-size: 0;
     width: 12px;
     height: 12px;
@@ -409,12 +454,12 @@ header{
     height: 658px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin: 0 auto;
 }
 .regblockleft{
     padding-top: 120px;
-    max-width: 540px;
-    height: 438px;
+    max-width: 600px;
+    height: min-content;
     text-align: center;
     float: left;
     margin: 0 auto;
@@ -432,15 +477,15 @@ header{
 .regblockright{
     padding: 0 10px;
     padding-top: 45px;
-    max-width: 590px;
-    height: 613px;
+    max-width: 600px;
+    height: min-content;
     text-align: left;
     float: right;
 }
 
 .form {
     display: inline-block;
-    max-width: 590px;
+    max-width: 600px;
 }
 #name{
     height: 53px;
@@ -454,8 +499,11 @@ header{
 .form__field{
     display: flex;
     flex-direction: row;
+
 }
 .form__fields{
+    max-width: 100%;
+
     display: flex;
     flex-direction: row;
     height: 30px;
@@ -481,11 +529,13 @@ header{
     border-color: #3498db;
 }
 .formbuttton{
-    padding: 0 111px;
+    height: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
 }
 .form button {
-    max-width: 368px;
-    max-height: 50px;
+    width: 90%;
+    height: 50px;
     border: 0;
     background-color:#337ab7;
     border-radius: 25px;
@@ -497,6 +547,7 @@ header{
     line-height: normal;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 input:valid:not(:placeholder-shown) {
     border-color: none;
